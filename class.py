@@ -5,14 +5,13 @@ class Person:
         self.key = (name, address)
 
     def __repr__(self):
-        return "Person('%s', '%s', '%s', '%s')" % (self.name, self.age, self.address)
+        return "Person('%s', '%s', '%s', '%s')" % (self.name, self.age, self.address, self.gender)
 
 
-sergey = Person("Сергей", 20, "Ленина, 26, 69")
+sergey = Person("Сергей", 20, "Ленина, 26, 69", 'M')
 
 people = {
     sergey.key: sergey,
 }
-pprint(people)
 pprint(people[sergey.key])
 pprint(people)
