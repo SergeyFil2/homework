@@ -15,3 +15,4 @@ people = {
 }
 pprint(people)
 pprint(people[sergey.key])
+pprint(people)
