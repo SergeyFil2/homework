@@ -48,7 +48,7 @@ def search_height(self, obj):
 
 
 to_search = [
-    Person('Нташа', 19, 120),
+    Person('Нташа', 18, 160),
     Person(height=120),
     Person(name='Нташа'),
 ]
