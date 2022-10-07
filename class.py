@@ -19,7 +19,7 @@ people = {
 pprint(people[sergey.key])
 pprint(people)
 
-#Реализовать поиск по полям (рост > 120, имя Наташа) + нечеткий поиск
+#Реализовать поиск по полям + нечеткий поиск
 
 def compare(s1, s2):
     ngrams = [s1[i:i+3] for i in range(len(s1))]
@@ -53,17 +53,17 @@ to_search = [
     Person(name='Нташа'),
 ]
 
-height_to_search = Person(height=120)
+height_to_search = Person(height=160)
 
 people = [
-    Person('Егор', 25, 119),
-    Person('Сандра', 18, 110),
+    Person('Егор', 25, 170),
+    Person('Сандра', 18, 159),
     Person('Степан', 30, 180),
-    Person('Дима', 19, 115),
+    Person('Дима', 19, 161),
     Person('Руслан', 27, 183),
-    Person('Наташа', 18, 124),
+    Person('Наташа', 18, 155),
 ]
-print('Рост больше 120:')
+print('Рост больше 160:')
 for y in people:
     if search_height(y, height_to_search):
         print(y)
